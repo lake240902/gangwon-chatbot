@@ -552,10 +552,7 @@ tab1, tab2, tab3, tab4, tab5, tab6 = st.tabs([
     "⭐ 리뷰 통계",
     "🗺️ 맞춤형 코스 추천"
 ])
-```
 
-그리고 **Ctrl + F** 로 이걸 또 검색해 주세요:
-```
 with tab5:
 
 # TAB 1: AI 챗봇
