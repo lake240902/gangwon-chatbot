@@ -553,7 +553,7 @@ tab1, tab2, tab3, tab4, tab5, tab6 = st.tabs([
     "🗺️ 맞춤형 코스 추천"
 ])
 
-with tab5:
+
 
 # TAB 1: AI 챗봇
 with tab1:
