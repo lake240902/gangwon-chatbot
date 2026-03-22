@@ -542,13 +542,21 @@ with st.sidebar:
 # 메인 탭
 # ============================================
 
-tab1, tab2, tab3, tab4, tab5 = st.tabs([
+from 맞춤형_코스_추천_탭 import render_custom_recommendation_tab
+
+tab1, tab2, tab3, tab4, tab5, tab6 = st.tabs([
     "💬 AI 챗봇",
     "📋 일정 생성기", 
     "🏆 TOP 추천",
     "📊 비교 분석",
-    "⭐ 리뷰 통계"
+    "⭐ 리뷰 통계",
+    "🗺️ 맞춤형 코스 추천"
 ])
+```
+
+그리고 **Ctrl + F** 로 이걸 또 검색해 주세요:
+```
+with tab5:
 
 # TAB 1: AI 챗봇
 with tab1:
@@ -913,3 +921,5 @@ st.markdown("""
     <p style='color: gray; margin-top: 10px;'>강원대학교 학생창의자율과제 7팀</p>
 </div>
 """, unsafe_allow_html=True)
+with tab6:
+    render_custom_recommendation_tab()
